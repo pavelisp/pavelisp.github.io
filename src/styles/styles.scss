@@ -1,0 +1,8 @@
+@use './partials/reset';
+@use './partials/global';
+@use './partials/fonts';
+
+.logo {
+  font-size: 50px;
+  font-weight: 700;
+}

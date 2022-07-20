@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+    background: rgb(0, 3, 17);
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  &__link {
+    text-decoration: none;
+    color: orange;
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: orangered;
+      letter-spacing: 5px;
+      transform:rotate3d(3, -4, 1, 25deg)
+    }
+  }
+}
