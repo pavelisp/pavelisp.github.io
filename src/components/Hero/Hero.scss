@@ -1,0 +1,44 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80%;
+  gap: 2rem;
+  padding-block: 2rem;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  &__icon {
+    max-width: 20%;
+    align-self: flex-start;
+    @include tablet {
+      max-width: 45%;
+      }
+  }
+
+  &__wordmark {
+    max-width: 100%;
+    @include tablet {
+      max-width: 80%;
+    }
+  }
+
+  &__copy {
+    max-width: 100%;
+    color: $accent;
+    font-size: 1.8rem;
+    line-height: 1.3;
+
+    @include tablet {
+      max-width: 80%;
+    }
+  }
+  &__wrapper {
+    background-color: $bg-color;
+  }
+}

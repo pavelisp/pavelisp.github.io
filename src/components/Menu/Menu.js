@@ -8,6 +8,9 @@ function Menu({isOpen, openMenu}) {
       <button onClick={openMenu}>BOOM</button>
       {isOpen && (
         <ul className='menu__overlay'>
+          <NavLink className='menu__link' to="/" onClick={openMenu}>
+          Home
+        </NavLink>
         <NavLink className='menu__link' to="/work" onClick={openMenu}>
           Work
         </NavLink>
