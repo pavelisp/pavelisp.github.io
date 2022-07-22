@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.cc3e8043.js",
+    "main.css": "/static/css/main.3a75f42e.css",
+    "main.js": "/static/js/main.2c318614.js",
+    "static/media/pavelisp_logo_wordmark.svg": "/static/media/pavelisp_logo_wordmark.e43fe5f84c854fadc6abe1767b2a0c33.svg",
+    "static/media/pavelisp_logo_icon.svg": "/static/media/pavelisp_logo_icon.0ce06c35348a91c78d5cf2da17ddd8e6.svg",
     "index.html": "/index.html",
-    "main.cc3e8043.js.map": "/static/js/main.cc3e8043.js.map"
+    "static/media/menu_icon.svg": "/static/media/menu_icon.eedabd7e8cf5f48b2057ea81c35c6778.svg",
+    "main.3a75f42e.css.map": "/static/css/main.3a75f42e.css.map",
+    "main.2c318614.js.map": "/static/js/main.2c318614.js.map"
   },
   "entrypoints": [
-    "static/js/main.cc3e8043.js"
+    "static/css/main.3a75f42e.css",
+    "static/js/main.2c318614.js"
   ]
 }
