@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import './Menu.scss';
 
+import menuIcon from '../../assets/images/menu_icon.svg'
+
 function Menu({isOpen, openMenu}) {
 
   return (
     <nav className='menu'>
-      <button onClick={openMenu}>BOOM</button>
+      <img className='menu__button' src={menuIcon} onClick={openMenu} alt=""/>
       {isOpen && (
         <ul className='menu__overlay'>
           <NavLink className='menu__link' to="/" onClick={openMenu}>
