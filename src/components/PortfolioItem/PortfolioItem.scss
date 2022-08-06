@@ -1,0 +1,103 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.portfolioItem {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    margin: 5rem;
+    align-items: center;
+  }
+
+  &__image {
+    position: relative;
+    margin-bottom: 3rem;
+    order: 1;
+
+    @include tablet {
+      order: 0;
+      margin-right: 5rem;
+    }
+  }
+
+  &__thumbnail {
+    display: block;
+    min-width: 75vw;
+    min-height: 50vw;
+    margin: 0 auto;
+    background-color: $image-bg;
+    border-radius: 10px;
+    border: 1px solid $image-border;
+
+    @include tablet {
+      min-width: 40vw;
+      min-height: 30vw;
+    }
+  }
+
+  &__link {
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: $accent;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    padding: 1rem 2rem;
+    transform: translateY(50%);
+    min-width: 5rem;
+    text-align: center;
+
+    @include tablet {
+      right: 0;
+      bottom: inherit;
+      top: 35%;
+      left: inherit;
+      transform: translateX(30%);
+    }
+
+    &--secondary {
+      right: 15%;
+      left: initial;
+      background-color: $bg-color;
+
+      @include tablet {
+        right : 0;
+        transform: translateY(150%) translateX(30%);
+      }
+
+    }
+  }
+
+  &__info {
+    width: 75vw;
+    margin: 2rem auto;
+    
+    @include tablet {
+      min-width: 30vw;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;  
+  }
+
+  &__copy {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  &__techList {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

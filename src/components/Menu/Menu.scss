@@ -16,6 +16,7 @@
     }
   }
   &__overlay {
+    z-index: 555;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +27,8 @@
     left: 0;
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
+
     @include tablet {
       font-size: 10rem;
     }

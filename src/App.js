@@ -11,7 +11,8 @@ function App() {
   });
 
   const openMenu = () => {
-    setApp({ menu: !app.menu });
+    app.menu ? (document.body.style.overflow = "auto"):(document.body.style.overflow = "hidden") ;
+    setApp({ menu: !app.menu });    
   };
 
   return (

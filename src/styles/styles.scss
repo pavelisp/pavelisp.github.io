@@ -1,8 +1,11 @@
 @use './partials/reset';
-@use './partials/global';
-@use './partials/fonts';
+@use './partials/colors' as *;
 
-.logo {
-  font-size: 50px;
-  font-weight: 700;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,600&display=swap');
+
+*,*::before, *::after {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  color: $text;
 }
+
