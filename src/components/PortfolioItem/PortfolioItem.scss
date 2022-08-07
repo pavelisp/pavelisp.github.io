@@ -9,10 +9,11 @@
   @include tablet {
     flex-direction: row;
     margin: 5rem;
-    align-items: center;
+    align-items: flex-start;
   }
 
   &__image {
+
     position: relative;
     margin-bottom: 3rem;
     order: 1;
@@ -21,6 +22,22 @@
       order: 0;
       margin-right: 5rem;
     }
+  }
+
+  &__shape {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 130%;
+    transform: translate(-25%, -10%);
+    z-index: -11;
+
+    @include tablet {
+      height: 130%;
+      transform: translate(-55%, -10%);
+    }
+
   }
 
   &__thumbnail {
@@ -39,40 +56,45 @@
   }
 
   &__link {
+    display: inline-block;
     color: white;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    font-weight: bold;
     text-decoration: none;
-    background-color: $accent;
-    position: absolute;
-    left: 15%;
-    bottom: 0;
+    background-color: $bg-color;
     padding: 1rem 2rem;
-    transform: translateY(50%);
     min-width: 5rem;
-    text-align: center;
-
-    @include tablet {
-      right: 0;
-      bottom: inherit;
-      top: 35%;
-      left: inherit;
-      transform: translateX(30%);
-    }
+    border-radius: 10px;
 
     &--secondary {
-      right: 15%;
-      left: initial;
-      background-color: $bg-color;
+      background-color: $accent;
+    }
 
-      @include tablet {
-        right : 0;
-        transform: translateY(150%) translateX(30%);
-      }
+    &--background {
+      z-index: -4;
+      display: inline-block;
+      position: absolute;
+      transform: rotate(12deg) translate(-15%, -19%);
+      width: 50px;
+      height: 20px;
+      background-color: grey;
+      right: 0;
+    }
 
+  }
+
+  &__button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    text-align: center;
+    transform: translateX(30%);
+
+    &--secondary {
+      top: 50%;
     }
   }
+
+
 
   &__info {
     width: 75vw;

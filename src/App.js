@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Menu from "./components/Menu/Menu";
 
 function App() {
+
   const [app, setApp] = useState({
     menu: false,
   });
