@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero/Hero";
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
+import Skills from "../../components/Skills/Skills";
 import Testimonials from "../../components/Testimonials/Testimonials";
 
 function HomePage() {
@@ -8,6 +9,7 @@ function HomePage() {
       <Hero />
       <PortfolioItem />
       <Testimonials />
+      <Skills />
     </>
   );
 }

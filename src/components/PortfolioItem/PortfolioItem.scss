@@ -82,6 +82,12 @@
     padding: 1rem 2rem;
     min-width: 5rem;
     border-radius: 10px;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      transform: scale3d(1.05,1.05,1);
+      box-shadow: 0 12px 6px -10px rgba(0,0,0,0.7);
+    }
 
     @include tablet {
       border: none;

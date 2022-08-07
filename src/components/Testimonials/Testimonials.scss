@@ -3,14 +3,13 @@
 .testimonial {
   width: 75vw;
   margin-inline: auto;
-  margin-block: 2rem;
+  margin-block: 5rem;
   display: flex;
   flex-direction: column;
 
-
   &::before, &::after {
     line-height: 0;
-    display: block;
+    display: inline-block;
     font-size: 5rem;
     font-weight: bold;
 
@@ -32,9 +31,6 @@
     margin-bottom: 1rem;
     font-style: italic;
     position: relative;
-
-
-
   }
 
   &__name {
@@ -43,6 +39,9 @@
     margin-bottom: 0.5rem;
   }
 
-  &__role {
+  &__title {
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
 }
