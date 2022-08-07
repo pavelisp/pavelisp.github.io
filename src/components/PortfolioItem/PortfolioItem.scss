@@ -99,11 +99,11 @@
   }
 
   &__info {
-    width: 75vw;
+    max-width: 75vw;
     margin: 2rem auto;
     
     @include tablet {
-      min-width: 30vw;
+      max-width: 35vw;
     }
   }
 

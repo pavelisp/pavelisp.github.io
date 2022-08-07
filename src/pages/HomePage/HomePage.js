@@ -8,8 +8,8 @@ function HomePage() {
     <>
       <Hero />
       <PortfolioItem />
-      <Testimonials />
       <Skills />
+      <Testimonials />
     </>
   );
 }
