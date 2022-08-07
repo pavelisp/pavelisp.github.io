@@ -6,7 +6,7 @@
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
-  padding-block: 5rem;
+  padding-block: 5rem 0;
 
   &__wrapper {
     width: 90vw;
@@ -21,24 +21,27 @@
   &__lists {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    // gap: 2rem;
     justify-content: space-around;
-    margin-block: 2rem;
+    align-items: center;
+    margin-block: 4rem;
+    text-align: center;
 
     @include tablet {
+      text-align: initial;
       flex-direction: row;
     }
 
   }
 
   &__list {
-    
+    list-style-image: url('../../assets/images/list-icon.svg');
   }
 
   &__list-item {
     font-size: 1.5rem;
     color: $accent;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
 }
