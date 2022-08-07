@@ -13,7 +13,6 @@
   }
 
   &__image {
-
     position: relative;
     margin-bottom: 3rem;
     order: 1;
@@ -55,7 +54,27 @@
     }
   }
 
+  &__links {
+    position: relative;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+    gap: 1rem;
+
+    @include tablet {
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 25%;
+      transform: translateX(20%);
+      gap: 1rem;
+    }
+
+  }
+
   &__link {
+    border: 2px solid white;
+    text-align: center;
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -64,37 +83,14 @@
     min-width: 5rem;
     border-radius: 10px;
 
+    @include tablet {
+      border: none;
+    }
+
     &--secondary {
       background-color: $accent;
     }
-
-    &--background {
-      z-index: -4;
-      display: inline-block;
-      position: absolute;
-      transform: rotate(12deg) translate(-15%, -19%);
-      width: 50px;
-      height: 20px;
-      background-color: grey;
-      right: 0;
-    }
-
   }
-
-  &__button {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 35%;
-    text-align: center;
-    transform: translateX(30%);
-
-    &--secondary {
-      top: 50%;
-    }
-  }
-
-
 
   &__info {
     width: 75vw;
@@ -117,9 +113,15 @@
   }
 
   &__techList {
+    flex-wrap: wrap;
     margin-block: 1rem;
     display: flex;
-    justify-content: space-between;
+    gap:2rem;
   }
 
+}
+
+
+.backgroundShape {
+  fill: orange !important;
 }

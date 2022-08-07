@@ -1,0 +1,48 @@
+@use '../../styles/partials/colors' as *;
+
+.testimonial {
+  width: 75vw;
+  margin-inline: auto;
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+
+
+  &::before, &::after {
+    line-height: 0;
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+
+  }
+
+  &::before {
+    content:"\201C";
+    transform: translateX(-1rem);
+  }
+  &::after {
+    content:"\201D";
+    align-self: flex-end;
+  }
+
+  &__copy {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    font-style: italic;
+    position: relative;
+
+
+
+  }
+
+  &__name {
+    font-size: 2rem;
+    color: $accent;
+    margin-bottom: 0.5rem;
+  }
+
+  &__role {
+  }
+}

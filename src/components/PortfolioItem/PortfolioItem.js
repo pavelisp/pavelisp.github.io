@@ -5,16 +5,12 @@ function PortfolioItem({portfolioImage, techIcons, title, description}) {
   return ( 
       <section className="portfolioItem">
         <div className="portfolioItem__image">
-        <img className="portfolioItem__shape" src={sideShape} alt=""/>
         <img src="" alt="" className="portfolioItem__thumbnail" />
-        <div className="portfolioItem__button">
-          <a className="portfolioItem__link" href="http://">DEMO</a>
-          <span className="portfolioItem__link--background"></span>
-        </div>
-        <div className="portfolioItem__button portfolioItem__button--secondary">
-          <a className="portfolioItem__link portfolioItem__link--secondary" href="http://">GITHUB</a>
-          <span className="portfolioItem__link--background"></span>
-        </div>  
+        <img className="portfolioItem__shape" src={sideShape} alt=""/>
+          <div className="portfolioItem__links">
+            <a className="portfolioItem__link" href="http://">DEMO</a>
+            <a className="portfolioItem__link portfolioItem__link--secondary" href="http://">GITHUB</a>
+          </div>
         </div>
         <div className="portfolioItem__info">
           <h3 className="portfolioItem__title">Coffee Dir</h3>
