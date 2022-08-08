@@ -13,15 +13,15 @@ function Menu({isOpen, openMenu}) {
           <NavLink className='menu__link' to="/" onClick={openMenu}>
           Home
         </NavLink>
-        <NavLink className='menu__link' to="/work" onClick={openMenu}>
+        <a className='menu__link' href="#work" onClick={openMenu}>
           Work
-        </NavLink>
-        <NavLink className='menu__link' to="/about" onClick={openMenu}>
+        </a>
+        <a className='menu__link' href="#about" onClick={openMenu}>
           About
-        </NavLink>
-        <NavLink className='menu__link' to="/contact" onClick={openMenu}>
+        </a>
+        <a className='menu__link' href="#contact" onClick={openMenu}>
           Contact
-        </NavLink>
+        </a>
       </ul>
       )}
     </nav>
