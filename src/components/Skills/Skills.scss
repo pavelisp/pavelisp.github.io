@@ -6,7 +6,7 @@
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
-  padding-block: 5rem 0;
+  padding-block: 10rem 5rem;
 
   &__wrapper {
     width: 90vw;
@@ -14,14 +14,14 @@
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
+    text-align: center;
   }
 
   &__lists {
     display: flex;
     flex-direction: column;
-    // gap: 2rem;
     justify-content: space-around;
     align-items: center;
     margin-block: 4rem;

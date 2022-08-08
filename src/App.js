@@ -4,6 +4,7 @@ import "./styles/styles.scss";
 
 import HomePage from "./pages/HomePage/HomePage";
 import Menu from "./components/Menu/Menu";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/work" element={<h1>work</h1>} />
           <Route path="/contact" element={<h1>contact</h1>} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

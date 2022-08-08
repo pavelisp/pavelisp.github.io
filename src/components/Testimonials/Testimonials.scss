@@ -3,7 +3,7 @@
 .testimonial {
   width: 75vw;
   margin-inline: auto;
-  margin-block: 5rem;
+  margin-block: 10rem;
   display: flex;
   flex-direction: column;
 
@@ -40,8 +40,9 @@
   }
 
   &__title {
-    display: inline-block;
-    font-size: 3rem;
-    margin-block: 3rem;
+    display: block;
+    font-size: 4rem;
+    margin-block: 10rem 3rem;
+    text-align: center;
   }
 }

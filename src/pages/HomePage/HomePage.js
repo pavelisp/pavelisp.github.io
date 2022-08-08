@@ -1,5 +1,5 @@
 import Hero from "../../components/Hero/Hero";
-import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
+import Portfolio from "../../components/Portfolio/Portfolio";
 import Skills from "../../components/Skills/Skills";
 import Testimonials from "../../components/Testimonials/Testimonials";
 
@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <PortfolioItem />
+      <Portfolio />
       <Skills />
       <Testimonials />
     </>

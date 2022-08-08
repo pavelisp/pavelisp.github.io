@@ -9,7 +9,7 @@
   @include tablet {
     flex-direction: row;
     margin: 5rem;
-    align-items: flex-start;
+    justify-content: center;
   }
 
   &__image {
@@ -45,12 +45,19 @@
     min-height: 50vw;
     margin: 0 auto;
     background-color: $image-bg;
+    background-image: url('https://i.imgur.com/ghyAf2a.jpeg');
+    background-size: cover;
     border-radius: 10px;
     border: 1px solid $image-border;
 
     @include tablet {
       min-width: 40vw;
-      min-height: 30vw;
+      min-height: 35vw;
+    }
+    
+    @include desktop {
+      min-width: 35vw;
+      min-height: 25vw;
     }
   }
 
@@ -108,7 +115,7 @@
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;  
   }
