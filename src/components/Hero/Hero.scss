@@ -7,10 +7,14 @@
   margin: 0 auto;
   max-width: 80%;
   gap: 2rem;
-  padding-block: 2rem;
+  padding-block: 10rem;
 
   @include tablet {
     flex-direction: row;
+  }
+
+  @include desktop {
+    padding-block: 12rem;
   }
 
   &__icon {

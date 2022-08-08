@@ -1,0 +1,104 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colors' as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 5rem;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  &__image {
+    position: relative;
+    align-self: center;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    background-image: url('/assets/images/Pavel_portrait.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow:
+    0 0 0 10px $bg-color,
+    0 0 0 20px $accent;
+    margin: 20px;
+    flex-shrink: 0;
+
+    @include tablet {
+      margin: 40px 10px 40px 30px;
+      width: 40vw;
+      height: 40vw;
+      align-self: flex-start;
+    }
+
+    @include desktop {
+      margin: 80px;
+    }
+
+  }
+
+  &__graphic {
+    &-1 {
+      border-radius: 50%;
+      right: -8%;
+      top: 50%;
+      position:absolute;
+      display: inline-block;
+      width: 20vw;
+      height: 20vw;
+      background-color: $bg-color;
+    }
+    &-2 {
+      left: -10%;
+      border-radius: 50%;
+      position: absolute;
+      display: inline-block;
+      width: 25vw;
+      height: 25vw;
+      background-color: $accent;
+    }
+
+    @include tablet {
+      &-1 {
+        width: 10vw;
+        height: 10vw;
+      }
+      &-2 {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+
+  }
+
+
+  &__text {
+    max-width: 90vw;
+    padding-inline: 3rem;
+  }
+
+  @include tablet {
+    &__text {
+      width: 50vw;
+    }
+  }
+  
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    padding-block: 1rem;
+
+    @include tablet {
+      text-align: left;
+    }
+
+  }
+  &__copy {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+}

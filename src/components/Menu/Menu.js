@@ -14,7 +14,7 @@ function Menu({isOpen, openMenu}) {
           Home
         </NavLink>
         <a className='menu__link' href="#work" onClick={openMenu}>
-          Work
+          Projects
         </a>
         <a className='menu__link' href="#about" onClick={openMenu}>
           About
