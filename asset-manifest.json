@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.70c86460.css",
-    "main.js": "/static/js/main.7e97ae06.js",
+    "main.js": "/static/js/main.1b9763d0.js",
+    "static/media/port-brainflix.png": "/static/media/port-brainflix.347bc984426c1d3ddbfb.png",
+    "static/media/port-bandsite.png": "/static/media/port-bandsite.380e623965bbf4d7921a.png",
     "static/media/Pavel_portrait.png": "/static/media/Pavel_portrait.daf530aa499379245bc2.png",
     "static/media/port-coffeedir.png": "/static/media/port-coffeedir.07ba38b95b65044dc406.png",
+    "static/media/port-datadepositbox.png": "/static/media/port-datadepositbox.4935ddc5c0070cae750a.png",
+    "static/media/port-instock.png": "/static/media/port-instock.6d272f1659e79fa66c1b.png",
     "static/media/pavelisp_logo_wordmark.svg": "/static/media/pavelisp_logo_wordmark.e43fe5f84c854fadc6abe1767b2a0c33.svg",
     "static/media/pavelisp_logo_icon.svg": "/static/media/pavelisp_logo_icon.0ce06c35348a91c78d5cf2da17ddd8e6.svg",
     "static/media/list-icon.svg": "/static/media/list-icon.39110a1fd6a813c380e6.svg",
@@ -11,10 +15,10 @@
     "static/media/menu_icon.svg": "/static/media/menu_icon.eedabd7e8cf5f48b2057ea81c35c6778.svg",
     "static/media/side-shape.svg": "/static/media/side-shape.4106adae97cd7bf52c8f25f05a2e6029.svg",
     "main.70c86460.css.map": "/static/css/main.70c86460.css.map",
-    "main.7e97ae06.js.map": "/static/js/main.7e97ae06.js.map"
+    "main.1b9763d0.js.map": "/static/js/main.1b9763d0.js.map"
   },
   "entrypoints": [
     "static/css/main.70c86460.css",
-    "static/js/main.7e97ae06.js"
+    "static/js/main.1b9763d0.js"
   ]
 }
