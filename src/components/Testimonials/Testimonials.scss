@@ -1,7 +1,7 @@
 @use '../../styles/partials/colors' as *;
 
 .testimonial {
-  width: 75vw;
+  max-width: 58ch;
   margin-inline: auto;
   margin-block: 10rem;
   display: flex;
@@ -27,10 +27,11 @@
   &__copy {
     display: inline-block;
     font-size: 1.3rem;
-    line-height: 1.3;
+    line-height: 1.5;
     margin-bottom: 1rem;
     font-style: italic;
     position: relative;
+    white-space: pre-wrap;
   }
 
   &__name {

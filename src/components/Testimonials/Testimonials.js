@@ -1,16 +1,18 @@
 import './Testimonials.scss';
+import testimonailData from '../../assets/data/testimonials.js';
 
-function Testimonials() {
+
+function Testimonials({name, role, testimonial}) {
   return ( 
     <>
       <div className="wrapper">
         <h2 className='testimonial__title'>Testimonials</h2>
       </div>
-      <article className="testimonial">
-        <p className="testimonial__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel in repudiandae reprehenderit iusto eaque maiores iste, rerum expedita quidem perspiciatis atque natus cumque, magni ipsum voluptas sit saepe vero. Accusamus.</p>
-        <h4 className="testimonial__name">First Last name</h4>
-        <h5 className="testimonial__role">Student Brainstation</h5>
-      </article>
+      { testimonailData.map(({testimonial, name, role}) =>  (<article className="testimonial">
+        <p className="testimonial__copy">{testimonial}</p>
+        <h4 className="testimonial__name">{name}</h4>
+        <h5 className="testimonial__role">{role}</h5>
+      </article>))}
     </>
    );
 }
