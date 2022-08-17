@@ -9,8 +9,8 @@ function PortfolioItem({image, tech, demo, github, name, description}) {
         <img src={image} alt={name} className="portfolioItem__thumbnail" />
         <img className="portfolioItem__shape" src={sideShape} alt=""/>
           <div className="portfolioItem__links">
-            <a className="portfolioItem__link" rel="noreferrer" target="_blank" href={demo}>DEMO</a>
-            <a rel="noreferrer" className="portfolioItem__link portfolioItem__link--secondary" target="_blank" href={github}>GITHUB</a>
+            {demo && <a className="portfolioItem__link" rel="noreferrer" target="_blank" href={demo}>DEMO</a>}
+            {github && <a rel="noreferrer" className="portfolioItem__link portfolioItem__link--secondary" target="_blank" href={github}>GITHUB</a>}
           </div>
         </div>
         <div className="portfolioItem__info">
