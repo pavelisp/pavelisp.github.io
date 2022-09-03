@@ -4,9 +4,9 @@ import portfolio from '../../assets/data/portfolio.js';
 
 function Portfolio() {
   return ( <>
-  <h2 id="work" class="portfolio__title">Projects</h2>
+  <h2 id="work" className="portfolio__title">Projects</h2>
   {
-    portfolio.map(item => <PortfolioItem {...item} />)
+    portfolio.map(item => <PortfolioItem key={item.name} {...item} />)
   }
   </>);
 }

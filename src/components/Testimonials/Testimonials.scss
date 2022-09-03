@@ -1,7 +1,7 @@
 @use '../../styles/partials/colors' as *;
 
 .testimonial {
-  max-width: 58ch;
+  max-width: clamp(90% ,58ch, 100%);
   margin-inline: auto;
   margin-block: 10rem;
   display: flex;

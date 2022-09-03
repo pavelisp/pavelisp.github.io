@@ -18,7 +18,7 @@ function PortfolioItem({image, tech, demo, github, name, description}) {
           <p className="portfolioItem__copy">{description}</p>
           <ul className="portfolioItem__tech">
             {
-              tech.map(icon => <li className="portfolioItem__techItem">{icon}</li>)
+              tech.map((icon, i) => <li key={i} className="portfolioItem__techItem">{icon}</li>)
             }
           </ul>
         </div>

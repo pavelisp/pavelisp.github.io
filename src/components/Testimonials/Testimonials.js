@@ -8,7 +8,7 @@ function Testimonials({name, role, testimonial}) {
       <div className="wrapper">
         <h2 className='testimonial__title'>Testimonials</h2>
       </div>
-      { testimonailData.map(({testimonial, name, role}) =>  (<article className="testimonial">
+      { testimonailData.map(({testimonial, name, role}) =>  (<article key={name} className="testimonial">
         <p className="testimonial__copy">{testimonial}</p>
         <h4 className="testimonial__name">{name}</h4>
         <h5 className="testimonial__role">{role}</h5>
