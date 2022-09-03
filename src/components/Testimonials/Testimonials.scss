@@ -1,11 +1,17 @@
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 .testimonial {
-  max-width: clamp(90% ,58ch, 100%);
+  max-width: 90%;
   margin-inline: auto;
   margin-block: 10rem;
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    max-width: 56ch;
+  }
 
   &::before, &::after {
     line-height: 0;
